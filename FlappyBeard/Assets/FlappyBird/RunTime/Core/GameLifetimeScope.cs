@@ -1,6 +1,7 @@
 using FlappyBird.Rintime.Core.Services.BirdMovment;
 using FlappyBird.Rintime.Core.Services.BirdMovment.Systems;
 using System;
+using FlappyBird.Rintime.Core.Services.BirdMovment.LinearMotion;
 using FlappyBird.Rintime.Core.Services.BirdMovment.SystemsRegistry;
 using UnityEngine;
 using UnityEngine.Serialization;
@@ -25,6 +26,7 @@ public class GameLigeTimeScope : LifetimeScope
 
         builder.Register<RotationSystem>(Lifetime.Singleton).AsImplementedInterfaces();
         builder.Register<JumpSystem>(Lifetime.Singleton).AsImplementedInterfaces();
+        builder.Register<LinearMotionSystem>(Lifetime.Singleton).AsImplementedInterfaces();
         builder.Register<MovementSystemRegistry>(Lifetime.Singleton);
         
         builder.Register<IMovementController, MovementController>(Lifetime.Singleton);
