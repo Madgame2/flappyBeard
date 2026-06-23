@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::BirdConfig
   _jumpForce: 5
   _minAngle: -15
-  _maxAngle: 60
+  _maxAngle: 70
   _maxFallSpeed: -8

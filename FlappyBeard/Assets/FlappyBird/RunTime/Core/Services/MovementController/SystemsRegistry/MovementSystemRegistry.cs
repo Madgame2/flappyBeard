@@ -9,7 +9,6 @@ namespace FlappyBird.Rintime.Core.Services.BirdMovment.SystemsRegistry
     {
         private readonly Dictionary<MovementType, IMovementSystem> _systems;
 
-        // VContainer автоматически сожмет все IMovementSystem в этот список
         public MovementSystemRegistry(IReadOnlyList<IMovementSystem> systems)
         {
             _systems = systems.ToDictionary(s => s.Type);
