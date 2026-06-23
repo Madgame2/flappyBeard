@@ -12,7 +12,7 @@ public class LocationPrefabsStorage : ScriptableObject
     
     private GameObject[] _cachedPrefabs;
     
-    public IReadOnlyCollection<LocationBlock> LocationBlocks => _locationBlocks;
+    public IReadOnlyList<LocationBlock> LocationBlocks => _locationBlocks;
     public IReadOnlyCollection<GameObject> LocationPrefabs => _cachedPrefabs;
 
 
