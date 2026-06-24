@@ -21,11 +21,11 @@ public class MovementConfig : ScriptableObject, IJumpConfig, IRotationConfig
     [SerializeField] 
     [Range(-50f, 0f)]
     private float _maxFallSpeed = -8f;
-
-
+    
     public float JumpForce => _jumpForce;
     public float MinAngle => _minAngle;
     public float MaxAngle => _maxAngle;
     public float MaxFallSpeed => _maxFallSpeed;
 
+    public MovementModifierGroup ModifierGroup => MovementModifierGroup.None;
 }

@@ -17,6 +17,8 @@ namespace FlappyBird.RunTime.Core.Services.Location
 {
     public class LocationController: IStartable, IDisposable
     {
+        private GlobalGameplayConfig _gameplayConfig;
+        
         private readonly IMovementController _movementController;
         private readonly LocationPrefabsStorage _prefabsStorage;
         private readonly Transform _spawnRoot;
@@ -29,11 +31,16 @@ namespace FlappyBird.RunTime.Core.Services.Location
         
         private float spawnInterval = 2f;
         
-        public LocationController(LocationPrefabsStorage prefabsStorage, IMovementController movementController,ObstacleSpawnPointRoot obstacleSpawnPointRoot)
+        public LocationController(LocationPrefabsStorage prefabsStorage,
+            IMovementController movementController,
+            ObstacleSpawnPointRoot obstacleSpawnPointRoot,
+            GlobalGameplayConfig gameplayConfig
+            )
         {
             _prefabsStorage = prefabsStorage;
             _movementController = movementController;
             _spawnRoot = obstacleSpawnPointRoot.transform;
+            _gameplayConfig = gameplayConfig;
             
             _container = new GameObject("[Location Container]").transform;
         }
@@ -53,8 +60,12 @@ namespace FlappyBird.RunTime.Core.Services.Location
 
             while (!cancellationToken.IsCancellationRequested)
             {
-                await UniTask.Delay(TimeSpan.FromSeconds(spawnInterval), cancellationToken: cancellationToken);
-                
+                var currentInterval = _gameplayConfig.CurrentSpawnInterval;
+
+                await UniTask.Delay(TimeSpan.FromSeconds(currentInterval), cancellationToken: cancellationToken);
+            
+                if (cancellationToken.IsCancellationRequested) return;
+            
                 SpawnBlock();
             }
         }
@@ -81,7 +92,7 @@ namespace FlappyBird.RunTime.Core.Services.Location
                 rules[i] = new MovementRule(strategy.MovementType, strategy.MoveConfig);
             }
             var blockMovementContext = new MovementContext(
-                block.gameObject,
+                block,
                 GameObjectType.LocationBlock,
                 rules
             );

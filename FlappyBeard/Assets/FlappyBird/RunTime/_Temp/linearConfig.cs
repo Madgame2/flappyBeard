@@ -7,5 +7,6 @@ namespace FlappyBird.RunTime._Temp
     {
         public Vector2 Direction => new Vector2(-1, 0);
         public float Speed => 5f;
+        public MovementModifierGroup ModifierGroup { get; }
     }
 }
