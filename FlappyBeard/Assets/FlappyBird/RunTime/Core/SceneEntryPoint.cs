@@ -1,6 +1,5 @@
 using FlappyBird.Rintime.Core.Services.BirdMovment;
 using FlappyBird.Rintime.Core.Services.BirdMovment.Meta;
-using UnityEngine;
 using VContainer.Unity;
 
 public class SceneEntryPoint : IStartable

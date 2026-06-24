@@ -7,20 +7,20 @@ namespace FlappyBird.Rintime.Core.Services.BirdMovment.SystemsRegistry
 {
     public class MovementSystemRegistry
     {
-        private readonly Dictionary<MovementType, IMovementSystem> _systems;
+        private readonly Dictionary<MovementType, IMovementSystem> _systemsByType;
 
-        // VContainer автоматически сожмет все IMovementSystem в этот список
-        public MovementSystemRegistry(IReadOnlyList<IMovementSystem> systems)
+        public MovementSystemRegistry(IReadOnlyList<IMovementSystem> movementSystems)
         {
-            _systems = systems.ToDictionary(s => s.Type);
+            _systemsByType = movementSystems.ToDictionary(system => system.Type);
         }
 
         public IMovementSystem GetSystem(MovementType type)
         {
-            if (_systems.TryGetValue(type, out var system))
+            if (_systemsByType.TryGetValue(type, out var system))
             {
                 return system;
             }
+            
             throw new Exception($"Система движения для типа {type} не найдена!");
         }
     }

@@ -3,9 +3,9 @@ namespace FlappyBird.Rintime.Core.Services.BirdMovment.Meta
     public struct MovementRule
     {
         public MovementType Type { get; }
-        public IBaseConfig Config { get; }
+        public IBaseMoveConfig Config { get; }
         
-        public MovementRule(MovementType type, IBaseConfig config)
+        public MovementRule(MovementType type, IBaseMoveConfig config)
         {
             Type = type;
             Config = config;
