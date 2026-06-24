@@ -14,21 +14,21 @@ namespace FlappyBird.Rintime.Core.Services.BirdMovment
     {
 
         private readonly MovementSystemRegistry _systemRegistry;
-        
+
         private readonly Dictionary<Guid, MovementContext> _permanentMovements = new();
         private Queue<MovementContext> _oneShotQueue = new();
         private MovementContext? _currentOneShot; // Текущая выполняемая одноразовая задача
         private CancellationTokenSource _oneShotCts; // Для отмены текущей задачи
-        
+
         private bool _isGameRunning;
-        
+
         private readonly CancellationTokenSource _cts = new();
-        
+
 
         public MovementController(MovementSystemRegistry systemRegistry)
         {
             _systemRegistry = systemRegistry;
-            
+
             _isGameRunning = true;
             StartMovementCycle(_cts.Token).Forget();
         }
@@ -46,11 +46,11 @@ namespace FlappyBird.Rintime.Core.Services.BirdMovment
 
                 while (_oneShotQueue.Count > 0)
                 {
-                    var movementContext = _oneShotQueue.Dequeue(); 
-    
+                    var movementContext = _oneShotQueue.Dequeue();
+
                     CalculateMovement(movementContext);
                 }
-                
+
                 await UniTask.Yield(PlayerLoopTiming.FixedUpdate, token);
             }
         }
@@ -70,12 +70,12 @@ namespace FlappyBird.Rintime.Core.Services.BirdMovment
                 }
             }
         }
-        
+
         public void ProcessJump()
         {
             if (!_isGameRunning) return;
 
-            
+
         }
 
         public void Dispose()
@@ -107,13 +107,45 @@ namespace FlappyBird.Rintime.Core.Services.BirdMovment
                 _oneShotCts?.Cancel();
                 return;
             }
-            
+
             if (_oneShotQueue.Any(x => x.Id == id))
             {
                 var remaining = _oneShotQueue.Where(x => x.Id != id).ToList();
                 _oneShotQueue.Clear();
                 foreach (var ctx in remaining) _oneShotQueue.Enqueue(ctx);
             }
+        }
+
+        public void RemoveAllByTarget(GameObject targetObject)
+        {
+            if (targetObject == null) return;
+
+            var permanentKeysToRemove = _permanentMovements
+                .Where(kvp => kvp.Value.TargetObject == targetObject)
+                .Select(kvp => kvp.Key)
+                .ToList();
+
+            foreach (var key in permanentKeysToRemove)
+            {
+                _permanentMovements.Remove(key);
+            }
+
+            if (_currentOneShot != null && _currentOneShot.Value.TargetObject == targetObject)
+            {
+                _oneShotCts?.Cancel();
+                _currentOneShot = null;
+            }
+
+            if (_oneShotQueue.Any(x => x.TargetObject == targetObject))
+            {
+                var remainingOneShots = _oneShotQueue.Where(x => x.TargetObject != targetObject).ToList();
+                _oneShotQueue.Clear();
+                foreach (var ctx in remainingOneShots)
+                {
+                    _oneShotQueue.Enqueue(ctx);
+                }
+            }
+
         }
     }
 }
