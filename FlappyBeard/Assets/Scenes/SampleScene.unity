@@ -373,7 +373,7 @@ MonoBehaviour:
     TypeName: 
   autoRun: 1
   autoInjectGameObjects: []
-  _birdView: {fileID: 7502185390424753679}
+  _playerView: {fileID: 7502185390424753679}
   movementConfig: {fileID: 11400000, guid: 666b70eb59a9d744b90a587c47f5dc72, type: 2}
 --- !u!4 &933879499
 Transform:

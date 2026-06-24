@@ -1,7 +1,6 @@
 using System;
 using FlappyBird.Rintime.Core.Services.BirdMovment;
 using FlappyBird.Rintime.Core.Services.BirdMovment.Meta;
-using UnityEngine;
 using VContainer.Unity;
 
 public class PlayerMovementBinder : IStartable, IDisposable
@@ -9,13 +8,13 @@ public class PlayerMovementBinder : IStartable, IDisposable
     private readonly InputService _inputService;
     private readonly IMovementController _movementController;
     private readonly BirdView _birdView;
-    private readonly MovementConfig _jumpConfig; // Передаем конкретный конфиг для прыжка
+    private readonly MovementConfig _jumpConfig; 
 
     public PlayerMovementBinder(
         InputService inputService, 
         IMovementController movementController, 
         BirdView birdView,
-        MovementConfig jumpConfig) // Запросим нужный конфиг из DI
+        MovementConfig jumpConfig) 
     {
         _inputService = inputService;
         _movementController = movementController;
