@@ -10,5 +10,7 @@ namespace FlappyBird.Rintime.Core.Services.BirdMovment
         
         Guid EnqueueOneShot(MovementContext context);
         void CancelOneShot(Guid id);
+        
+        void RemoveAllByTarget(GameObject targetObject);
     }
 }
