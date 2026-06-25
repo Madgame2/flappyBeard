@@ -23,19 +23,13 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/41d29b352f6a475ab1bf7c6628b8279046ae00/96/981b1f3e/Lazy`1.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/41d29b352f6a475ab1bf7c6628b8279046ae00/c9/a13d1e87/Guid.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/dc764b59c049482b93bebc78a7e33a04212600/81/b4c794ef/Component.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Meta/BirdConfigs/DefoultConfig.asset" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Services/MovementController/IBaseConfig.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Services/MovementController/IMoveable.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Services/MovementController/IMovementSystem.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Services/MovementController/LinearMotion/ILinearConfig.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Services/MovementController/LinearMotion/ILinearMotionSystem.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Services/MovementController/LinearMotion/LinearMotionSystem.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Services/MovementController/Meta/MovementRule.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Services/MovementController/Meta/MovmentsTypes.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Services/MovementController/SystemsRegistry/MovementSystemRegistry.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Services/PlayerMovementBinder.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Movement/Interfaces/IMoveable.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Player/Input/IPlayerInput.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Player/Input/PlayerInput.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.inputsystem@57d0e36f6123/InputSystem/Plugins/PlayerInput/PlayerInput.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/jp.hadashikick.vcontainer@c1460d42dff7/Runtime/Internal/ReflectionInjector.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/jp.hadashikick.vcontainer@c1460d42dff7/Runtime/Unity/ComponentRegistrationBuilder.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
@@ -45,61 +39,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.2102241038134287" />
-      <entry key="MS500" value="1.7320428479728127" />
-      <entry key="S2" value="1.9249837977110118" />
-      <entry key="S5" value="1.9694188059414919" />
-      <entry key="S10" value="1.9967840201945921" />
-      <entry key="S30" value="2.3944757520159277" />
-      <entry key="S60" value="3.24709912920143" />
-      <entry key="M2" value="4.890624234751197" />
-      <entry key="M5" value="8.553510708944803" />
-      <entry key="M10" value="12.105503038900034" />
-      <entry key="M15" value="15.536174629727398" />
-      <entry key="M30" value="31.169095898319085" />
-      <entry key="H1" value="75.6326335992604" />
-      <entry key="H2" value="164.6930829891843" />
-      <entry key="H4" value="280.15528577040624" />
-      <entry key="D1" value="477.60967271161" />
-      <entry key="W1" value="527.9691738459777" />
+      <entry key="MS100" value="1.0" />
+      <entry key="MS500" value="1.0" />
+      <entry key="S2" value="1.000000036526025" />
+      <entry key="S5" value="1.0010593536440562" />
+      <entry key="S10" value="1.032547713346043" />
+      <entry key="S30" value="1.31929155685602" />
+      <entry key="S60" value="1.5696063998870877" />
+      <entry key="M2" value="1.8933047322984828" />
+      <entry key="M5" value="4.775625133201299" />
+      <entry key="M10" value="18.043721032172712" />
+      <entry key="M15" value="35.17573499763726" />
+      <entry key="M30" value="80.18290405542807" />
+      <entry key="H1" value="146.17175186419118" />
+      <entry key="H2" value="249.93354478157931" />
+      <entry key="H4" value="385.83498298780887" />
+      <entry key="D1" value="635.8160330420326" />
+      <entry key="W1" value="702.8512471410652" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="2.7720343696648013E-265" />
-      <entry key="MS500" value="1.2261955724172865E-53" />
-      <entry key="S2" value="6.005788497520023E-14" />
-      <entry key="S5" value="6.0745800308887875E-6" />
-      <entry key="S10" value="0.003359344078474258" />
-      <entry key="S30" value="0.3084154273937992" />
-      <entry key="S60" value="1.0716105183602689" />
-      <entry key="M2" value="2.050935168054402" />
-      <entry key="M5" value="3.0958631500088205" />
-      <entry key="M10" value="4.433296584278224" />
-      <entry key="M15" value="6.859318200045866" />
-      <entry key="M30" value="17.938810375305113" />
-      <entry key="H1" value="42.84089223904239" />
-      <entry key="H2" value="85.9669498447586" />
-      <entry key="H4" value="139.5870979842028" />
-      <entry key="D1" value="230.60511686433279" />
-      <entry key="W1" value="253.8329104857707" />
+      <entry key="MS100" value="7.323739270709586E-131" />
+      <entry key="MS500" value="9.535550244739441E-27" />
+      <entry key="S2" value="4.200144699224995E-7" />
+      <entry key="S5" value="0.004134797599371795" />
+      <entry key="S10" value="0.09044137450567659" />
+      <entry key="S30" value="0.7116711505216603" />
+      <entry key="S60" value="1.1966386661901556" />
+      <entry key="M2" value="1.668315035537807" />
+      <entry key="M5" value="3.7152106825779523" />
+      <entry key="M10" value="9.980428943681586" />
+      <entry key="M15" value="17.4330097009662" />
+      <entry key="M30" value="37.809661423210905" />
+      <entry key="H1" value="70.30784116071918" />
+      <entry key="H2" value="120.98065841013633" />
+      <entry key="H4" value="185.3632766682663" />
+      <entry key="D1" value="302.1339931383549" />
+      <entry key="W1" value="333.3451669194932" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="1.1305433195026517" />
-      <entry key="MS500" value="1.709198851766233" />
-      <entry key="S2" value="1.9186433808635412" />
-      <entry key="S5" value="1.966809841148999" />
-      <entry key="S10" value="1.9975168552116258" />
-      <entry key="S30" value="2.6831465673759496" />
-      <entry key="S60" value="4.288819597348588" />
-      <entry key="M2" value="6.914143683325966" />
-      <entry key="M5" value="11.63204322325953" />
-      <entry key="M10" value="16.524911014567806" />
-      <entry key="M15" value="22.38040420668034" />
-      <entry key="M30" value="49.087339118258804" />
-      <entry key="H1" value="118.4475089223818" />
-      <entry key="H2" value="250.63119099862584" />
-      <entry key="H4" value="419.7164244987103" />
-      <entry key="D1" value="708.2067270900535" />
-      <entry key="W1" value="781.8007866835463" />
+      <entry key="MS100" value="1.4821714897400462E-4" />
+      <entry key="MS500" value="0.1714666610738247" />
+      <entry key="S2" value="0.6434949393303574" />
+      <entry key="S5" value="0.8429391739630351" />
+      <entry key="S10" value="1.0320270409077017" />
+      <entry key="S30" value="1.9845948885114808" />
+      <entry key="S60" value="2.7365769396397" />
+      <entry key="M2" value="3.539264790589455" />
+      <entry key="M5" value="8.461819950554332" />
+      <entry key="M10" value="27.984280573208576" />
+      <entry key="M15" value="52.56361337646626" />
+      <entry key="M30" value="117.94568072564866" />
+      <entry key="H1" value="216.43664138289844" />
+      <entry key="H2" value="370.8756997684505" />
+      <entry key="H4" value="571.1663216206969" />
+      <entry key="D1" value="937.940250792436" />
+      <entry key="W1" value="1036.1948340681379" />
     </decayedShown>
   </component>
   <component name="ProblemsViewState">
@@ -159,13 +153,15 @@
       <option name="MIXED_MODE_DEBUG" value="0" />
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" useMixedMode="false">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" useMixedMode="false" ignored-value-for-modified-check="29492">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" />
+      <option name="pid" value="29492" />
       <option name="projectPathOnTarget" />
       <option name="runtimes">
-        <list />
+        <list>
+          <MonoRuntime />
+        </list>
       </option>
       <option name="selectedOptions">
         <list />
@@ -220,6 +216,32 @@
           <line>20</line>
           <properties documentPath="E:\Projects\Games\flappyBeard\FlappyBeard\Assets\FlappyBird\RunTime\Core\Services\LocationGeneretion\LocationPrefabsStorage.cs" containingFunctionPresentation="Method 'OnEnable'" />
           <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Player/Systems/PlayerJumpSystem.cs</url>
+          <line>40</line>
+          <properties documentPath="E:\Projects\Games\flappyBeard\FlappyBeard\Assets\FlappyBird\RunTime\Core\Player\Systems\PlayerJumpSystem.cs" containingFunctionPresentation="Method 'JumpLoopAsync'">
+            <startOffsets>
+              <option value="1270" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1303" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Player/Systems/PlayerRotateSystem.cs</url>
+          <line>46</line>
+          <properties documentPath="E:\Projects\Games\flappyBeard\FlappyBeard\Assets\FlappyBird\RunTime\Core\Player\Systems\PlayerRotateSystem.cs" containingFunctionPresentation="Method 'Start'">
+            <startOffsets>
+              <option value="1674" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1731" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="7" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -1,32 +1,29 @@
-using FlappyBird.Rintime.Core.Services.BirdMovment;
-using FlappyBird.Rintime.Core.Services.BirdMovment.Systems;
-using FlappyBird.Rintime.Core.Services.BirdMovment.LinearMotion;
-using FlappyBird.Rintime.Core.Services.BirdMovment.SystemsRegistry;
+using FlappyBird.Rintime.Core.Player.Input;
+using FlappyBird.Rintime.Core.Player.Systems;
 using UnityEngine;
+using UnityEngine.Serialization;
 using VContainer;
 using VContainer.Unity;
 
 public class GameLigeTimeScope : LifetimeScope
 {
     [SerializeField] private BirdView _playerView;
-    [SerializeField] private MovementConfig movementConfig;
+    [SerializeField] private PlayerMovementConfig playerMovementConfig;
     
     protected override void Configure(IContainerBuilder builder)
     {
-        builder.RegisterComponent(_playerView);
-        builder.RegisterComponent(movementConfig);
+        builder.RegisterComponent(_playerView).AsImplementedInterfaces().AsSelf();
         
+        builder.RegisterInstance(playerMovementConfig);
+
         builder.Register<PlayerControls>(Lifetime.Singleton);
+        builder.RegisterEntryPoint<InputService>().AsSelf(); 
+        builder.Register<PlayerInput>(Lifetime.Singleton).AsImplementedInterfaces();
 
-        builder.RegisterEntryPoint<SceneEntryPoint>();
-        builder.RegisterEntryPoint<InputService>().AsSelf();
-        builder.RegisterEntryPoint<PlayerMovementBinder>();
+        builder.RegisterEntryPoint<PlayerJumpSystem>(Lifetime.Scoped)
+            .WithParameter(_playerView);
 
-        builder.Register<RotationSystem>(Lifetime.Singleton).AsImplementedInterfaces();
-        builder.Register<JumpSystem>(Lifetime.Singleton).AsImplementedInterfaces();
-        builder.Register<LinearMotionSystem>(Lifetime.Singleton).AsImplementedInterfaces();
-        builder.Register<MovementSystemRegistry>(Lifetime.Singleton);
-        
-        builder.Register<IMovementController, MovementController>(Lifetime.Singleton);
+        builder.RegisterEntryPoint<PlayerRotateSystem>(Lifetime.Scoped)
+            .WithParameter(_playerView);
     }
 }
