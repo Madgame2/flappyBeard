@@ -374,9 +374,7 @@ MonoBehaviour:
   autoRun: 1
   autoInjectGameObjects: []
   _playerView: {fileID: 7502185390424753679}
-  movementConfig: {fileID: 11400000, guid: 666b70eb59a9d744b90a587c47f5dc72, type: 2}
-  jumpConfig: {fileID: 11400000, guid: 9f5fa962e04edd841b129f7bd07a56b5, type: 2}
-  rotationConfig: {fileID: 11400000, guid: ab49cda059702504b931b448f23d50bb, type: 2}
+  playerMovementConfig: {fileID: 11400000, guid: 520a9987e32d0204a8d3e4b05788508d, type: 2}
 --- !u!4 &933879499
 Transform:
   m_ObjectHideFlags: 0
