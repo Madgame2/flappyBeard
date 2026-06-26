@@ -6,12 +6,12 @@ using VContainer.Unity;
 
 namespace FlappyBird.Runtime.Core.Location.Systems
 {
-    public class LinearMovementSystem : IFixedTickable
+    public class LocationMovementSystem : IFixedTickable
     {
         private readonly ActiveBlocksRegistry _registry;
         private readonly DifficultyState _difficulty;
         
-        public LinearMovementSystem(ActiveBlocksRegistry registry, DifficultyState difficulty)
+        public LocationMovementSystem(ActiveBlocksRegistry registry, DifficultyState difficulty)
         {
             _registry = registry;
             _difficulty = difficulty;
@@ -19,12 +19,12 @@ namespace FlappyBird.Runtime.Core.Location.Systems
 
         public void FixedTick()
         {
-            float time = Time.time;
-            float speedMod = _difficulty.SpeedModifier;
+            var time = Time.time;
+            var speedMod = _difficulty.SpeedModifier;
 
             foreach (var block in _registry.Blocks)
             {
-                Vector2 totalVelocity = Vector2.zero;
+                var totalVelocity = Vector2.zero;
                 
                 foreach (var strategy in block.MoveStrategies)
                 {

@@ -16,8 +16,6 @@ namespace FlappyBird.RunTime.Core.Difficulty.Systems
             {
                 _config = config;
                 _state = state;
-            
-                // Устанавливаем начальные значения
                 _state.SpeedModifier = _config.StartSpeedModifier;
                 _state.SpawnInterval = _config.StartSpawnInterval;
             }
@@ -26,7 +24,7 @@ namespace FlappyBird.RunTime.Core.Difficulty.Systems
             {
                 _elapsedTime += Time.deltaTime;
                 
-                float progress = Mathf.Clamp01(_elapsedTime / _config.MaxDifficultyTime);
+                var progress = Mathf.Clamp01(_elapsedTime / _config.MaxDifficultyTime);
                 
                 _state.SpeedModifier = _config.StartSpeedModifier * _config.SpeedProgressionCurve.Evaluate(progress);
                 _state.SpawnInterval = _config.StartSpawnInterval * _config.SpawnProgressionCurve.Evaluate(progress);

@@ -33,12 +33,15 @@ namespace FlappyBird.Runtime.Core.Location.Systems
             _factory.Initialize();
             SpawnLoopAsync(_cts.Token).Forget();
         }
+        
+        public void Dispose() => _cts.Cancel();
 
         private async UniTaskVoid SpawnLoopAsync(CancellationToken token)
         {
             while (!token.IsCancellationRequested)
             {
                 var currentInterval = _difficulty.SpawnInterval;
+                
                 await UniTask.Delay(TimeSpan.FromSeconds(currentInterval), cancellationToken: token);
             
                 if (token.IsCancellationRequested) return;
@@ -49,9 +52,7 @@ namespace FlappyBird.Runtime.Core.Location.Systems
 
         private void SpawnBlock()
         {
-            var block = _factory.GetRandomBlock(_spawnRoot.position);
+            _factory.GetRandomBlock(_spawnRoot.position);
         }
-
-        public void Dispose() => _cts.Cancel();
     }
 }

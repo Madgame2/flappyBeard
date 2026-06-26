@@ -3,7 +3,6 @@ using FlappyBird.RunTime.Core.Difficulty.Data;
 using FlappyBird.RunTime.Core.Difficulty.Systems.FlappyBird.Runtime.Core.Difficulty.Systems;
 using FlappyBird.Runtime.Core.Location.Infrastructure;
 using FlappyBird.Runtime.Core.Location.Systems;
-using FlappyBird.RunTime.Core.Services.Spawn;
 using UnityEngine;
 using VContainer;
 using VContainer.Unity;
@@ -26,15 +25,11 @@ public class GameLigeTimeScope  : LifetimeScope
         
         builder.RegisterEntryPoint<DifficultySystem>(Lifetime.Scoped);
         
-        var locationContainer = new GameObject("[Location Container]").transform;
-        
-        builder.Register<LocationBlockPool>(Lifetime.Scoped)
-            .WithParameter("poolContainer", locationContainer)
-            .AsImplementedInterfaces();
+        builder.Register<LocationBlockPool>(Lifetime.Scoped).AsImplementedInterfaces();
         
         builder.RegisterEntryPoint<LocationSpawnSystem>(Lifetime.Scoped)
             .WithParameter("spawnRoot", _obstacleSpawnPointRoot.transform);
         
-        builder.RegisterEntryPoint<LinearMovementSystem>(Lifetime.Scoped);
+        builder.RegisterEntryPoint<LocationMovementSystem>(Lifetime.Scoped);
     }
 }

@@ -12,28 +12,25 @@ namespace FlappyBird.Runtime.Core.Location.Infrastructure
     {
         private readonly LocationPrefabsStorage _prefabStorage;
         private readonly ActiveBlocksRegistry _activeBlocksRegistry;
-        private readonly Transform _poolContainer;
-
         private readonly Dictionary<LocationBlock, ObjectPool<LocationBlock>> _pools = new();
-
+        private Transform _poolContainer;
+        
         public LocationBlockPool(
             ActiveBlocksRegistry activeBlocksRegistry,
-            LocationPrefabsStorage prefabStorage,
-            Transform poolContainer)
+            LocationPrefabsStorage prefabStorage)
         {
             _activeBlocksRegistry = activeBlocksRegistry;
             _prefabStorage = prefabStorage;
-            _poolContainer = poolContainer;
         }
 
         public void Initialize()
         {
-            foreach (var prefab in _prefabStorage.LocationBlocks)
+            _poolContainer = new GameObject("[Location Container]").transform;
+            
+            foreach (var setup in _prefabStorage.Setups)
             {
-                RegisterPool(prefab);
+                RegisterPool(setup);
             }
-
-            PrewarmPools();
         }
 
         public LocationBlock GetRandomBlock(Vector3 spawnPosition)
@@ -42,11 +39,9 @@ namespace FlappyBird.Runtime.Core.Location.Infrastructure
                 return null;
 
             var prefabIndex = Random.Range(0, _prefabStorage.LocationBlocks.Count);
-
-            LocationBlock prefab = _prefabStorage.LocationBlocks[prefabIndex];
-
-            LocationBlock instance = _pools[prefab].Get();
-
+            var prefab = _prefabStorage.LocationBlocks[prefabIndex];
+            var instance = _pools[prefab].Get();
+            
             instance.transform.position = spawnPosition;
 
             return instance;
@@ -62,25 +57,24 @@ namespace FlappyBird.Runtime.Core.Location.Infrastructure
             _pools.Clear();
         }
 
-        private void RegisterPool(LocationBlock prefab)
+        private void RegisterPool(LocationPrefabsStorage.BlockSetup setup)
         {
+            LocationBlock prefab = setup.Prefab;
             ObjectPool<LocationBlock> objectPool = null;
 
-            objectPool = new ObjectPool<LocationBlock>(
+             objectPool = new ObjectPool<LocationBlock>(
                 createFunc: () => CreateBlock(prefab, objectPool),
-
                 actionOnGet: ActivateBlock,
-
                 actionOnRelease: DeactivateBlock,
-
                 actionOnDestroy: DestroyBlock,
-
                 collectionCheck: true,
-                defaultCapacity: 2,
-                maxSize: 5
+                defaultCapacity: setup.PrewarmCount,
+                maxSize: setup.MaxSize
             );
 
             _pools.Add(prefab, objectPool);
+            
+            PrewarmSinglePool(objectPool, setup.PrewarmCount);
         }
 
         private LocationBlock CreateBlock(
@@ -97,36 +91,39 @@ namespace FlappyBird.Runtime.Core.Location.Infrastructure
         private void ActivateBlock(LocationBlock block)
         {
             block.gameObject.SetActive(true);
-
             _activeBlocksRegistry.Blocks.Add(block);
         }
 
         private void DeactivateBlock(LocationBlock block)
         {
             block.gameObject.SetActive(false);
-
-            block.Rigidbody2D.linearVelocity = Vector2.zero;
-
             _activeBlocksRegistry.Blocks.Remove(block);
         }
 
         private void DestroyBlock(LocationBlock block)
         {
+            _activeBlocksRegistry.Blocks.Remove(block);
+            
             if (block != null)
             {
                 Object.Destroy(block.gameObject);
             }
         }
 
-        private void PrewarmPools()
+        private void PrewarmSinglePool(ObjectPool<LocationBlock> pool, int count)
         {
-            foreach (ObjectPool<LocationBlock> pool in _pools.Values)
+            if (count <= 0) return;
+            
+            var tempArray = new LocationBlock[count];
+            
+            for (int i = 0; i < count; i++)
             {
-                LocationBlock firstInstance = pool.Get();
-                LocationBlock secondInstance = pool.Get();
-
-                pool.Release(firstInstance);
-                pool.Release(secondInstance);
+                tempArray[i] = pool.Get();
+            }
+            
+            for (int i = 0; i < count; i++)
+            {
+                pool.Release(tempArray[i]);
             }
         }
     }

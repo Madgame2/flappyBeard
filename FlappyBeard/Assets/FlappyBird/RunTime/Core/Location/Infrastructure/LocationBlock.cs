@@ -12,8 +12,6 @@ public class LocationBlock : MonoBehaviour, IMoveable
 
     private Action<LocationBlock> _releaseAction;
     
-
-    
     public MoveStrategyBase[] MoveStrategies => _moveStrategies;
     public Rigidbody2D Rigidbody2D => _rigidbody2D;
     public Transform Transform => transform;

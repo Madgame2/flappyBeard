@@ -14,6 +14,13 @@ public class InputService: IDisposable, IStartable
         _inputActions = inputActions;
     }
 
+    public void Start()
+    {
+        _inputActions.Player.Enable();
+        
+        _inputActions.Player.Jump.performed += OnJumpPerformed;
+    }
+    
     public void Dispose()
     {
         _inputActions.Player.Disable();
@@ -24,12 +31,5 @@ public class InputService: IDisposable, IStartable
     private void OnJumpPerformed(InputAction.CallbackContext ctx)
     {
         JumpRequested?.Invoke();
-    }
-
-    public void Start()
-    {
-        _inputActions.Player.Enable();
-        
-        _inputActions.Player.Jump.performed += OnJumpPerformed;
     }
 }
