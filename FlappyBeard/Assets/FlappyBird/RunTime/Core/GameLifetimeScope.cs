@@ -1,3 +1,8 @@
+using FlappyBird.RunTime.Core.Player.Configs;
+using FlappyBird.RunTime.Core.Player.Input;
+using FlappyBird.RunTime.Core.Player.Systems;
+using FlappyBird.RunTime.Core.Services;
+using FlappyBird.RunTime.Core.View;
 using FlappyBird.RunTime.Core;
 using FlappyBird.RunTime.Core.Difficulty.Data;
 using FlappyBird.RunTime.Core.Difficulty.Systems.FlappyBird.Runtime.Core.Difficulty.Systems;
@@ -7,29 +12,45 @@ using UnityEngine;
 using VContainer;
 using VContainer.Unity;
 
-public class GameLigeTimeScope  : LifetimeScope
+namespace FlappyBird.RunTime.Core
 {
-    [SerializeField] private LocationPrefabsStorage _prefabsStorage;
-    [SerializeField] private ObstacleSpawnPointRoot _obstacleSpawnPointRoot;
-    [SerializeField] private GlobalGameplayConfig _gameplayConfig;
-    
-    protected override void Configure(IContainerBuilder builder)
+    public class GameLifeTimeScope : LifetimeScope
     {
-        builder.RegisterComponent(_obstacleSpawnPointRoot);
-        builder.RegisterComponent(_prefabsStorage);
+        [SerializeField] private BirdView _playerView;
+        [SerializeField] private PlayerMovementConfig _playerMovementConfig;
+        [SerializeField] private LocationPrefabsStorage _prefabsStorage;
+    	[SerializeField] private ObstacleSpawnPointRoot _obstacleSpawnPointRoot;
+    	[SerializeField] private GlobalGameplayConfig _gameplayConfig;
+    
+        protected override void Configure(IContainerBuilder builder)
+        {
+            builder.RegisterComponent(_playerView).AsImplementedInterfaces().AsSelf();
+            builder.RegisterComponent(_obstacleSpawnPointRoot);
+        	builder.RegisterComponent(_prefabsStorage);
         
-        builder.RegisterInstance(_gameplayConfig);
-        
-        builder.Register<ActiveBlocksRegistry>(Lifetime.Scoped);
-        builder.Register<DifficultyState>(Lifetime.Scoped);
-        
-        builder.RegisterEntryPoint<DifficultySystem>(Lifetime.Scoped);
-        
-        builder.Register<LocationBlockPool>(Lifetime.Scoped).AsImplementedInterfaces();
-        
-        builder.RegisterEntryPoint<LocationSpawnSystem>(Lifetime.Scoped)
-            .WithParameter(_obstacleSpawnPointRoot.transform);
-        
-        builder.RegisterEntryPoint<LocationMovementSystem>(Lifetime.Scoped);
+            builder.RegisterInstance(_playerMovementConfig);
+            builder.RegisterInstance(_gameplayConfig);
+
+            builder.Register<PlayerControls>(Lifetime.Singleton);
+            builder.RegisterEntryPoint<InputService>().AsSelf(); 
+            builder.Register<PlayerInput>(Lifetime.Singleton).AsImplementedInterfaces();
+
+            builder.RegisterEntryPoint<PlayerJumpSystem>(Lifetime.Scoped)
+                .WithParameter(_playerView);
+            builder.RegisterEntryPoint<PlayerRotateSystem>(Lifetime.Scoped)
+                .WithParameter(_playerView);
+                
+            builder.Register<ActiveBlocksRegistry>(Lifetime.Scoped);
+        	builder.Register<DifficultyState>(Lifetime.Scoped);
+        	
+        	builder.RegisterEntryPoint<DifficultySystem>(Lifetime.Scoped);
+        	
+        	builder.Register<LocationBlockPool>(Lifetime.Scoped).AsImplementedInterfaces();
+        	
+        	builder.RegisterEntryPoint<LocationSpawnSystem>(Lifetime.Scoped)
+            	.WithParameter(_obstacleSpawnPointRoot.transform);
+            	
+            builder.RegisterEntryPoint<LocationMovementSystem>(Lifetime.Scoped);
+        }
     }
 }
