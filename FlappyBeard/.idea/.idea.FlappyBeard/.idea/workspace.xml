@@ -11,18 +11,118 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bf97469d-037c-46aa-87c6-5d004338480f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/GlobalGameplayConfig.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/GlobalGameplayConfig.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Difficulty.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Difficulty/Data.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Difficulty/Data/DifficultyState.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Difficulty/Data/DifficultyState.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Difficulty/Systems.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Difficulty/Systems/DifficultySystem.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Difficulty/Systems/DifficultySystem.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Location/Infrastructure/ActiveBlocksRegistry.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Location/Infrastructure/ActiveBlocksRegistry.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Location/Infrastructure/DeadZone.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Location/Infrastructure/LocationBlock.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Location/Interfaces/IDisposableBlock.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Location/Interfaces/IDisposableBlock.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Location/Strategies.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Location/Strategies/LinearMoveStrategy.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Location/Strategies/LinearMoveStrategy.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Location/Strategies/MoveStrategyBase.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Location/Strategies/MoveStrategyBase.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Location/Strategies/SineMoveStrategy.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Location/Strategies/SineMoveStrategy.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Location/Systems/LocationMovementSystem.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Location/Systems/LocationMovementSystem.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Movement.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Movement/Interfaces.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.FlappyBeard/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FlappyBeard/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/GameLifetimeScope.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/GameLifetimeScope.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Services/LocationController/LocationController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Services/LocationController/LocationController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Services/LocationController/MovementStrategies/LinearMoveStrategy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Services/LocationController/MovementStrategies/LinearMoveStrategy.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Services/LocationController/MovementStrategies/MoveStrategyBase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Services/LocationController/MovementStrategies/MoveStrategyBase.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Services/LocationController/Prefabs/LocationBlock.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Services/LocationController/Prefabs/LocationBlock.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Services/MovementController/IBaseConfig.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Services/MovementController/IBaseConfig.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Services/MovementController/LinearMotion/LinearMotionSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Services/MovementController/LinearMotion/LinearMotionSystem.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Services/MovementController/Meta/MovementConfig.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Services/MovementController/Meta/MovementConfig.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/_Temp/linearConfig.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/_Temp/linearConfig.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/SceneEntryPoint.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/SceneEntryPoint.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Services/DifficultyService.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Services/DifficultyService/DifficultyService.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Services/DifficultyService/DifficultyService.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Services/InputService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Services/InputService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Services/LocationController.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Services/LocationController/DeadZone.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Location/Infrastructure/DeadZone.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Services/LocationController/DeadZone.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Services/LocationController/LocationController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Services/LocationController/LocationController.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Services/LocationController/LocationPrefabsStorage.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Location/Infrastructure/LocationPrefabsStorage.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Services/LocationController/LocationPrefabsStorage.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Location/Infrastructure/LocationPrefabsStorage.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Services/LocationController/MovementStrategies.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Services/LocationController/MovementStrategies/BaseStategy.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Services/LocationController/MovementStrategies/BaseStategy.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Services/LocationController/MovementStrategies/LinearMoveStrategy.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Services/LocationController/MovementStrategies/LinearMoveStrategy.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Services/LocationController/MovementStrategies/MoveStrategyBase.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Services/LocationController/MovementStrategies/MoveStrategyBase.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Services/LocationController/ObstacleSpawnPointRoot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Location/Infrastructure/ObstacleSpawnPointRoot.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Services/LocationController/ObstacleSpawnPointRoot.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Location/Infrastructure/ObstacleSpawnPointRoot.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Services/LocationController/Prefabs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Location/Prefabs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Services/LocationController/Prefabs/DefoultLocationBlocks.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Location/Prefabs/DefoultLocationBlocks.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Services/LocationController/Prefabs/DefoultLocationBlocks.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Location/Prefabs/DefoultLocationBlocks.asset.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Services/LocationController/Prefabs/LocationBlock.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Services/LocationController/Prefabs/LocationBlock.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Location/Infrastructure/LocationBlock.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Services/LocationController/Prefabs/LocationBlock_1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Location/Prefabs/LocationBlock_1.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Services/LocationController/Prefabs/LocationBlock_1.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Location/Prefabs/LocationBlock_1.prefab.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Services/LocationController/Prefabs/LocationBlock_2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Location/Prefabs/LocationBlock_2.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Services/LocationController/Prefabs/LocationBlock_2.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Location/Prefabs/LocationBlock_2.prefab.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Services/LocationController/Prefabs/ObstacleSpawnPoint.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Location/Prefabs/ObstacleSpawnPoint.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Services/LocationController/Prefabs/ObstacleSpawnPoint.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Location/Prefabs/ObstacleSpawnPoint.prefab.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Services/MovementController.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Services/MovementController/IBaseConfig.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Services/MovementController/IBaseConfig.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Services/MovementController/IMoveable.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Services/MovementController/IMoveable.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Services/MovementController/IMovementController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Services/MovementController/IMovementController.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Services/MovementController/IMovementSystem.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Services/MovementController/IMovementSystem.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Services/MovementController/Jump.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Services/MovementController/Jump/IJumpConfig.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Services/MovementController/Jump/IJumpConfig.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Services/MovementController/Jump/IJumpSystem.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Services/MovementController/Jump/IJumpSystem.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Services/MovementController/Jump/JumpSystem.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Services/MovementController/Jump/JumpSystem.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Services/MovementController/LinearMotion.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Services/MovementController/LinearMotion/ILinearConfig.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Services/MovementController/LinearMotion/ILinearConfig.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Services/MovementController/LinearMotion/ILinearMotionSystem.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Services/MovementController/LinearMotion/ILinearMotionSystem.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Services/MovementController/LinearMotion/LinearMotionSystem.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Services/MovementController/LinearMotion/LinearMotionSystem.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Services/MovementController/Meta.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Services/MovementController/Meta/MovementConfig.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Services/MovementController/Meta/MovementConfig.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Services/MovementController/Meta/MovementContext.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Services/MovementController/Meta/MovementContext.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Services/MovementController/Meta/MovementModifierGroup.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Services/MovementController/Meta/MovementModifierGroup.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Services/MovementController/Meta/MovementRule.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Services/MovementController/Meta/MovementRule.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Services/MovementController/Meta/MovmentsTypes.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Services/MovementController/Meta/MovmentsTypes.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Services/MovementController/MovementController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Services/MovementController/MovementController.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Services/MovementController/Rotation.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Services/MovementController/Rotation/IRotationConfig.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Services/MovementController/Rotation/IRotationConfig.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Services/MovementController/Rotation/IRotationSystem.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Services/MovementController/Rotation/IRotationSystem.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Services/MovementController/Rotation/RotationSystem.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Services/MovementController/Rotation/RotationSystem.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Services/MovementController/SystemsRegistry.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Services/MovementController/SystemsRegistry/MovementSystemRegistry.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Services/MovementController/SystemsRegistry/MovementSystemRegistry.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Services/PlayerMovementBinder.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Services/PlayerMovementBinder.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/View/BirdView.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/View/BirdView.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/_Temp/linearConfig.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/_Temp/linearConfig.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,9 +136,20 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/41d29b352f6a475ab1bf7c6628b8279046ae00/96/981b1f3e/Lazy`1.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/41d29b352f6a475ab1bf7c6628b8279046ae00/aa/7e73d92f/ThrowHelper.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/41d29b352f6a475ab1bf7c6628b8279046ae00/c9/a13d1e87/Guid.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/5a41d6b7189842eca409fd0b1c3e3dcf17bf78/20/d3a6880f/IDisposable.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/dc764b59c049482b93bebc78a7e33a04212600/81/b4c794ef/Component.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Difficulty/Data/DifficultyState.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Difficulty/Systems/DifficultySystem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/GlobalGameplayConfig.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Location/Infrastructure/ActiveBlocksRegistry.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Location/Interfaces/IDisposableBlock.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Location/Strategies/LinearMoveStrategy.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Location/Strategies/MoveStrategyBase.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Location/Strategies/SineMoveStrategy.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Location/Systems/LocationMovementSystem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Services/LocationController/DeadZone.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Services/LocationController/ObstacleSpawnPointRoot.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Services/LocationController/Prefabs/DefoultLocationBlocks.asset" root0="FORCE_HIGHLIGHTING" />
@@ -54,6 +165,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Services/MovementController/SystemsRegistry/MovementSystemRegistry.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Services/PlayerMovementBinder.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/FlappyBird/RunTime/_Temp/linearConfig.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.inputsystem@57d0e36f6123/InputSystem/Plugins/PlayerInput/PlayerInput.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/jp.hadashikick.vcontainer@c1460d42dff7/Runtime/Internal/ReflectionInjector.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/jp.hadashikick.vcontainer@c1460d42dff7/Runtime/Unity/ComponentRegistrationBuilder.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
@@ -63,61 +175,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0000000494312984" />
-      <entry key="MS500" value="1.0357281529202351" />
-      <entry key="S2" value="1.707755270150304" />
-      <entry key="S5" value="2.6101078303659366" />
-      <entry key="S10" value="3.1810014384902168" />
-      <entry key="S30" value="3.692942907514189" />
-      <entry key="S60" value="3.8418984952813546" />
-      <entry key="M2" value="3.955155218062728" />
-      <entry key="M5" value="4.974752633814768" />
-      <entry key="M10" value="7.5969075889529325" />
-      <entry key="M15" value="10.299574774754745" />
-      <entry key="M30" value="19.963974297435186" />
-      <entry key="H1" value="50.35900255710298" />
-      <entry key="H2" value="128.17058771996273" />
-      <entry key="H4" value="249.21475770195278" />
-      <entry key="D1" value="488.29474944122086" />
-      <entry key="W1" value="554.03752015885" />
+      <entry key="MS100" value="6.772180208586967E-27" />
+      <entry key="MS500" value="1.3535965421729666E-5" />
+      <entry key="S2" value="0.13803294198665159" />
+      <entry key="S5" value="0.8754419095960442" />
+      <entry key="S10" value="1.628868264900827" />
+      <entry key="S30" value="2.762311802194721" />
+      <entry key="S60" value="3.5057744052152153" />
+      <entry key="M2" value="4.156536325661284" />
+      <entry key="M5" value="5.3842049878233915" />
+      <entry key="M10" value="7.287516730684389" />
+      <entry key="M15" value="8.921358966272313" />
+      <entry key="M30" value="13.691174927536398" />
+      <entry key="H1" value="30.004998294668873" />
+      <entry key="H2" value="87.66329982683368" />
+      <entry key="H4" value="203.36709984353826" />
+      <entry key="D1" value="483.05975738487126" />
+      <entry key="W1" value="568.1970071569876" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="0.0" />
-      <entry key="MS500" value="0.0" />
-      <entry key="S2" value="6.007630762862593E-128" />
-      <entry key="S5" value="1.29265159501199E-51" />
-      <entry key="S10" value="3.599213196923427E-26" />
-      <entry key="S30" value="4.066846786890321E-9" />
-      <entry key="S60" value="1.1164866303132452E-4" />
-      <entry key="M2" value="0.022215940529668545" />
-      <entry key="M5" value="0.5736154235743859" />
-      <entry key="M10" value="1.8568488884430547" />
-      <entry key="M15" value="3.1068828175621794" />
-      <entry key="M30" value="8.33483918748179" />
-      <entry key="H1" value="25.496167067176472" />
-      <entry key="H2" value="65.10680332998359" />
-      <entry key="H4" value="123.27596016609579" />
-      <entry key="D1" value="235.67124249966216" />
-      <entry key="W1" value="266.4100786611111" />
+      <entry key="MS100" value="1.0" />
+      <entry key="MS500" value="1.0" />
+      <entry key="S2" value="1.0" />
+      <entry key="S5" value="1.0" />
+      <entry key="S10" value="1.0" />
+      <entry key="S30" value="1.000000000118599" />
+      <entry key="S60" value="1.00001539178563" />
+      <entry key="M2" value="1.005549578792056" />
+      <entry key="M5" value="1.1992094142695473" />
+      <entry key="M10" value="1.797501344467506" />
+      <entry key="M15" value="2.4448868619365154" />
+      <entry key="M30" value="4.656662793335293" />
+      <entry key="H1" value="13.29909473228382" />
+      <entry key="H2" value="42.887913834622495" />
+      <entry key="H4" value="99.39285245802391" />
+      <entry key="D1" value="232.3986714681735" />
+      <entry key="W1" value="272.55480379151624" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="5.977907611433849E-5" />
-      <entry key="MS500" value="0.14872987919131855" />
-      <entry key="S2" value="1.0707197358870035" />
-      <entry key="S5" value="2.1798535121580915" />
-      <entry key="S10" value="2.9111313809196657" />
-      <entry key="S30" value="3.586601257178359" />
-      <entry key="S60" value="3.7864495941150977" />
-      <entry key="M2" value="3.948555271753584" />
-      <entry key="M5" value="5.5323902759604575" />
-      <entry key="M10" value="9.440339518773467" />
-      <entry key="M15" value="13.393865674090994" />
-      <entry key="M30" value="28.285563062764393" />
-      <entry key="H1" value="75.83763399177079" />
-      <entry key="H2" value="193.25471837006413" />
-      <entry key="H4" value="372.4675799581036" />
-      <entry key="D1" value="723.9577730067022" />
-      <entry key="W1" value="820.4462416824848" />
+      <entry key="MS100" value="1.3073395179069088E-19" />
+      <entry key="MS500" value="1.765992206387805E-4" />
+      <entry key="S2" value="0.22147675752708715" />
+      <entry key="S5" value="1.1908750163517776" />
+      <entry key="S10" value="2.1673976890511075" />
+      <entry key="S30" value="3.5446184688738365" />
+      <entry key="S60" value="4.372268199320957" />
+      <entry key="M2" value="5.084333374362203" />
+      <entry key="M5" value="6.5454805067854895" />
+      <entry key="M10" value="9.061761328015521" />
+      <entry key="M15" value="11.34863222993059" />
+      <entry key="M30" value="18.336063137932268" />
+      <entry key="H1" value="43.29263488952051" />
+      <entry key="H2" value="130.53528810397253" />
+      <entry key="H4" value="302.74094804778883" />
+      <entry key="D1" value="715.4503039795947" />
+      <entry key="W1" value="840.7504208713138" />
     </decayedShown>
   </component>
   <component name="ProblemsViewState">
@@ -132,30 +244,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Attach to Unity Editor.Attach to Unity Editor.executor": "Debug",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.MCP Project settings loaded": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.cidr.known.project.marker": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.readMode.enableVisualFormatting": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "cidr.known.project.marker": "true",
-    "codeWithMe.voiceChat.enabledByDefault": "false",
-    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
-    "git-widget-placeholder": "FB-16-location-generation",
-    "junie.onboarding.icon.badge.shown": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "to.speed.mode.migration.done": "true",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Attach to Unity Editor.Attach to Unity Editor.executor&quot;: &quot;Debug&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.readMode.enableVisualFormatting&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;FB-16-location-generation&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="E:\GameEngines\Unity\Unity\6000.3.10f1\Editor\Unity.exe" />
@@ -177,13 +289,15 @@
       <option name="MIXED_MODE_DEBUG" value="0" />
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" useMixedMode="false">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" useMixedMode="false" ignored-value-for-modified-check="26856">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" />
+      <option name="pid" value="26856" />
       <option name="projectPathOnTarget" />
       <option name="runtimes">
-        <list />
+        <list>
+          <MonoRuntime />
+        </list>
       </option>
       <option name="selectedOptions">
         <list />
@@ -196,12 +310,13 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="9351a8b4-c39e-4a30-93be-72c9fd89c4e2" name="Changes" comment="" />
+      <changelist id="bf97469d-037c-46aa-87c6-5d004338480f" name="Changes" comment="" />
       <created>1782213907817</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1782213907817</updated>
       <workItem from="1782213908472" duration="16038000" />
+      <workItem from="1782414926604" duration="6869000" />
     </task>
     <servers />
   </component>
@@ -215,6 +330,17 @@
     <option name="unityProjectFolder" value="true" />
   </component>
   <component name="UnityUnitTestConfiguration" currentTestLauncher="Both" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
@@ -238,19 +364,6 @@
           <line>20</line>
           <properties documentPath="E:\Projects\Games\flappyBeard\FlappyBeard\Assets\FlappyBird\RunTime\Core\Services\LocationGeneretion\LocationPrefabsStorage.cs" containingFunctionPresentation="Method 'OnEnable'" />
           <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Services/LocationController/LocationController.cs</url>
-          <line>64</line>
-          <properties documentPath="E:\Projects\Games\flappyBeard\FlappyBeard\Assets\FlappyBird\RunTime\Core\Services\LocationController\LocationController.cs" containingFunctionPresentation="Method 'SpawnLoopAsync'">
-            <startOffsets>
-              <option value="2198" />
-            </startOffsets>
-            <endOffsets>
-              <option value="2295" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
