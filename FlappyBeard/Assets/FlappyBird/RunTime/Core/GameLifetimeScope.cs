@@ -12,13 +12,13 @@ namespace FlappyBird.RunTime.Core
     public class GameLifeTimeScope : LifetimeScope
     {
         [SerializeField] private BirdView _playerView;
-        [SerializeField] private PlayerMovementConfig playerMovementConfig;
+        [SerializeField] private PlayerMovementConfig _playerMovementConfig;
     
         protected override void Configure(IContainerBuilder builder)
         {
             builder.RegisterComponent(_playerView).AsImplementedInterfaces().AsSelf();
         
-            builder.RegisterInstance(playerMovementConfig);
+            builder.RegisterInstance(_playerMovementConfig);
 
             builder.Register<PlayerControls>(Lifetime.Singleton);
             builder.RegisterEntryPoint<InputService>().AsSelf(); 

@@ -22,16 +22,16 @@ namespace FlappyBird.RunTime.Core.Services
             _inputActions.Player.Jump.performed -= OnJumpPerformed;
         }
 
-        private void OnJumpPerformed(InputAction.CallbackContext ctx)
-        {
-            OnJumpRequested?.Invoke();
-        }
-
         public void Start()
         {
             _inputActions.Player.Enable();
 
             _inputActions.Player.Jump.performed += OnJumpPerformed;
+        }
+        
+        private void OnJumpPerformed(InputAction.CallbackContext ctx)
+        {
+            OnJumpRequested?.Invoke();
         }
     }
 }
