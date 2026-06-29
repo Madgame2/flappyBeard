@@ -3,7 +3,6 @@ using FlappyBird.RunTime.Core.Player.Input;
 using FlappyBird.RunTime.Core.Player.Systems;
 using FlappyBird.RunTime.Core.Services;
 using FlappyBird.RunTime.Core.View;
-using FlappyBird.RunTime.Core;
 using FlappyBird.RunTime.Core.Difficulty.Data;
 using FlappyBird.RunTime.Core.Difficulty.Systems.FlappyBird.Runtime.Core.Difficulty.Systems;
 using FlappyBird.Runtime.Core.Location.Infrastructure;
@@ -21,6 +20,7 @@ namespace FlappyBird.RunTime.Core
         [SerializeField] private LocationPrefabsStorage _prefabsStorage;
 	    [SerializeField] private ObstacleSpawnPointRoot _obstacleSpawnPointRoot;
 	    [SerializeField] private CoreGameplayConfig _gameplayConfig;
+	    [SerializeField] private UIConfig _uiConfig;
     
         protected override void Configure(IContainerBuilder builder)
         {
@@ -29,8 +29,11 @@ namespace FlappyBird.RunTime.Core
 	        builder.RegisterComponent(_prefabsStorage);
         
             builder.RegisterInstance(_playerMovementConfig);
+            builder.RegisterInstance(_uiConfig);
             builder.RegisterInstance(_gameplayConfig);
 
+            builder.Register<UIManager>(Lifetime.Singleton).AsImplementedInterfaces();
+            
             builder.Register<PlayerControls>(Lifetime.Singleton);
             builder.RegisterEntryPoint<InputService>().AsSelf(); 
             builder.Register<PlayerInput>(Lifetime.Singleton).AsImplementedInterfaces();

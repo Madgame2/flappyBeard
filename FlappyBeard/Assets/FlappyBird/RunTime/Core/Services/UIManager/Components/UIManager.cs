@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class UIManager
 {
-    [SerializeField] private Transform _uiRoot;
+    private Transform _uiRoot;
     private UIConfig _uiConfig;
     
     private readonly Dictionary<string, UIElement> _cachedWindows = new ();
@@ -31,6 +31,6 @@ public class UIManager
 
     private UIElement GetOrCreate(string windowId)
     {
-        
+        return null;
     }
 }
