@@ -12,5 +12,54 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fb36f25add143b7a07ca0f5b3fa6860, type: 3}
   m_Name: GlobalGameplayConfig
   m_EditorClassIdentifier: Assembly-CSharp::FlappyBird.RunTime.Core.GlobalGameplayConfig
-  startBaseSpeed: 5
   startSpawnInterval: 2
+  startSpeedModifier: 1
+  maxDifficultyTime: 300
+  speedProgressionCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1.0110772
+      value: 3.9888043
+      inSlope: 2
+      outSlope: 2
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spawnProgressionCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.9977112
+      value: 0.059887707
+      inSlope: -0.7
+      outSlope: -0.7
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4

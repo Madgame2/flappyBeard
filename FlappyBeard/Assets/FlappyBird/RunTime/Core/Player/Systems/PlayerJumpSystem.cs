@@ -21,13 +21,13 @@ namespace FlappyBird.RunTime.Core.Player.Systems
 
         public void Tick()
         {
-            if (_jumpConfig != null)
+            if (_jumpConfig == null)
             {
                 Debug.LogError($"{nameof(_jumpConfig)} is null");
                 return;
             }
 
-            if (_playerObject != null)
+            if (_playerObject == null)
             {
                 Debug.LogError($"{nameof(_playerObject)} is null");
                 return;

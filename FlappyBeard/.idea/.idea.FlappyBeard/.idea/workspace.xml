@@ -12,8 +12,10 @@
   <component name="ChangeListManager">
     <list default="true" id="bf97469d-037c-46aa-87c6-5d004338480f" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.FlappyBeard/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FlappyBeard/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/GameLifetimeScope.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/GameLifetimeScope.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Location/Systems/LocationSpawnSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Location/Systems/LocationSpawnSystem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/GlobalGameplayConfig.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/GlobalGameplayConfig.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Location/Prefabs/DefoultLocationBlocks.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Location/Prefabs/DefoultLocationBlocks.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Player/Systems/PlayerJumpSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Player/Systems/PlayerJumpSystem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,7 +38,6 @@
     <setting file="file://$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Difficulty/Systems/DifficultySystem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/GlobalGameplayConfig.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Location/Infrastructure/ActiveBlocksRegistry.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Location/Interfaces/IDisposableBlock.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Location/Strategies/LinearMoveStrategy.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Location/Strategies/MoveStrategyBase.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Location/Strategies/SineMoveStrategy.cs" root0="FORCE_HIGHLIGHTING" />
@@ -167,13 +168,15 @@
       <option name="MIXED_MODE_DEBUG" value="0" />
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" useMixedMode="false">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" useMixedMode="false" ignored-value-for-modified-check="21428">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" />
+      <option name="pid" value="21428" />
       <option name="projectPathOnTarget" />
       <option name="runtimes">
-        <list />
+        <list>
+          <MonoRuntime />
+        </list>
       </option>
       <option name="selectedOptions">
         <list />
@@ -193,6 +196,7 @@
       <updated>1782213907817</updated>
       <workItem from="1782213908472" duration="16038000" />
       <workItem from="1782414926604" duration="6869000" />
+      <workItem from="1782724507941" duration="669000" />
     </task>
     <servers />
   </component>
@@ -240,6 +244,19 @@
           <line>20</line>
           <properties documentPath="E:\Projects\Games\flappyBeard\FlappyBeard\Assets\FlappyBird\RunTime\Core\Services\LocationGeneretion\LocationPrefabsStorage.cs" containingFunctionPresentation="Method 'OnEnable'" />
           <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Location/Infrastructure/DeadZone.cs</url>
+          <line>6</line>
+          <properties documentPath="E:\Projects\Games\flappyBeard\FlappyBeard\Assets\FlappyBird\RunTime\Core\Location\Infrastructure\DeadZone.cs" containingFunctionPresentation="Method 'OnTriggerEnter2D'">
+            <startOffsets>
+              <option value="126" />
+            </startOffsets>
+            <endOffsets>
+              <option value="182" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

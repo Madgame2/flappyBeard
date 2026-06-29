@@ -12,6 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dab4be5508e1e984cac3908bc0373f2a, type: 3}
   m_Name: DefoultLocationBlocks
   m_EditorClassIdentifier: Assembly-CSharp::PrefabsStorage
-  _locationBlocks:
-  - {fileID: 1516295162994628170, guid: a57690f2951bf8c4b8f5aaa6d4e93c8c, type: 3}
-  - {fileID: 5426717012515461943, guid: 08ed7f09a88ba824bb6f9859d2fbb5e8, type: 3}
+  _blocksSetups:
+  - Prefab: {fileID: 1516295162994628170, guid: a57690f2951bf8c4b8f5aaa6d4e93c8c, type: 3}
+    PrewarmCount: 2
+    MaxSize: 5
+  - Prefab: {fileID: 5426717012515461943, guid: 08ed7f09a88ba824bb6f9859d2fbb5e8, type: 3}
+    PrewarmCount: 2
+    MaxSize: 5
