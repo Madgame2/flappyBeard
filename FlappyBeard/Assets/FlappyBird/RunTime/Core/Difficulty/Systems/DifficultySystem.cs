@@ -8,11 +8,11 @@ namespace FlappyBird.RunTime.Core.Difficulty.Systems
     {
         public class DifficultySystem : ITickable
         {
-            private readonly GlobalGameplayConfig _config;
+            private readonly CoreGameplayConfig _config;
             private readonly DifficultyState _state;
             private float _elapsedTime;
 
-            public DifficultySystem(GlobalGameplayConfig config, DifficultyState state)
+            public DifficultySystem(CoreGameplayConfig config, DifficultyState state)
             {
                 _config = config;
                 _state = state;
@@ -20,7 +20,7 @@ namespace FlappyBird.RunTime.Core.Difficulty.Systems
                 _state.SpawnInterval = _config.StartSpawnInterval;
             }
 
-            public void Tick()
+            void ITickable.Tick()
             {
                 _elapsedTime += Time.deltaTime;
                 

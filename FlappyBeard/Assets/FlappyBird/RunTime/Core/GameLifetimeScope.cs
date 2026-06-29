@@ -20,7 +20,7 @@ namespace FlappyBird.RunTime.Core
         [SerializeField] private PlayerMovementConfig _playerMovementConfig;
         [SerializeField] private LocationPrefabsStorage _prefabsStorage;
     	[SerializeField] private ObstacleSpawnPointRoot _obstacleSpawnPointRoot;
-    	[SerializeField] private GlobalGameplayConfig _gameplayConfig;
+    	[SerializeField] private CoreGameplayConfig _gameplayConfig;
     
         protected override void Configure(IContainerBuilder builder)
         {

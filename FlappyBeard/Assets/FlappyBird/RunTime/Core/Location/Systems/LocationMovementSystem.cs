@@ -17,7 +17,7 @@ namespace FlappyBird.Runtime.Core.Location.Systems
             _difficulty = difficulty;
         }
 
-        public void FixedTick()
+        void IFixedTickable.FixedTick()
         {
             var time = Time.time;
             var speedMod = _difficulty.SpeedModifier;
