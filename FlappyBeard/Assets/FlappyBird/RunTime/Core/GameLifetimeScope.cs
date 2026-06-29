@@ -19,14 +19,14 @@ namespace FlappyBird.RunTime.Core
         [SerializeField] private BirdView _playerView;
         [SerializeField] private PlayerMovementConfig _playerMovementConfig;
         [SerializeField] private LocationPrefabsStorage _prefabsStorage;
-    	[SerializeField] private ObstacleSpawnPointRoot _obstacleSpawnPointRoot;
-    	[SerializeField] private CoreGameplayConfig _gameplayConfig;
+	    [SerializeField] private ObstacleSpawnPointRoot _obstacleSpawnPointRoot;
+	    [SerializeField] private CoreGameplayConfig _gameplayConfig;
     
         protected override void Configure(IContainerBuilder builder)
         {
             builder.RegisterComponent(_playerView).AsImplementedInterfaces().AsSelf();
             builder.RegisterComponent(_obstacleSpawnPointRoot);
-        	builder.RegisterComponent(_prefabsStorage);
+	        builder.RegisterComponent(_prefabsStorage);
         
             builder.RegisterInstance(_playerMovementConfig);
             builder.RegisterInstance(_gameplayConfig);
