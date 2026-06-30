@@ -119,51 +119,17 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &129820485 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3408900719085293622, guid: e81dbf7a5ab98f24b8063d4c6e8f50ec, type: 3}
+--- !u!114 &129820489 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6977908585362863252, guid: e81dbf7a5ab98f24b8063d4c6e8f50ec, type: 3}
   m_PrefabInstance: {fileID: 452130535148927112}
   m_PrefabAsset: {fileID: 0}
---- !u!50 &129820487
-Rigidbody2D:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 129820485}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDamping: 0
-  m_AngularDamping: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
---- !u!114 &129820489
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 129820485}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3648ac6d15946534ca225d73676ad82b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FlappyBird.RunTime.Core.View.BirdView
-  _rigidbody2D: {fileID: 129820487}
 --- !u!1 &491696094
 GameObject:
   m_ObjectHideFlags: 0
@@ -552,7 +518,6 @@ MonoBehaviour:
   _prefabsStorage: {fileID: 11400000, guid: 24d27df2773ea7a40b764643999e4199, type: 2}
   _obstacleSpawnPointRoot: {fileID: 1860658836}
   _gameplayConfig: {fileID: 11400000, guid: 63e9c193aa52ba942a8f4de28f9cca23, type: 2}
-  _uiConfig: {fileID: 11400000, guid: 84d2483fe49a8d645bbcd730d9ed88d5, type: 2}
   _uiRoot: {fileID: 491696095}
 --- !u!1 &950849462
 GameObject:
@@ -904,20 +869,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    - target: {fileID: 3444711840482744799, guid: e81dbf7a5ab98f24b8063d4c6e8f50ec, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 3408900719085293622, guid: e81dbf7a5ab98f24b8063d4c6e8f50ec, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 129820487}
-    - targetCorrespondingSourceObject: {fileID: 3408900719085293622, guid: e81dbf7a5ab98f24b8063d4c6e8f50ec, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 129820489}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e81dbf7a5ab98f24b8063d4c6e8f50ec, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
