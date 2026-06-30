@@ -19,6 +19,12 @@ MonoBehaviour:
   - ID: WarningQuestion
     Layer: 1
     Prefab: {fileID: 5016832488445079271, guid: dd11580bac1dadf408e6dcd06df40017, type: 3}
-  - ID: WarningQuestion
-    Layer: 1
+  - ID: ScoreUI
+    Layer: 0
     Prefab: {fileID: 6404916503118287393, guid: 7643570c1cf1b07479aa640b0468fe9a, type: 3}
+  - ID: GameOverScrean
+    Layer: 1
+    Prefab: {fileID: 7069673461491578918, guid: bac6c9a3b468e6e4186db025ec8cbafe, type: 3}
+  - ID: PauseMenu
+    Layer: 1
+    Prefab: {fileID: 1880466130768905963, guid: 353ca42a4d43bf540b53347b53cc10ec, type: 3}

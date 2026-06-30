@@ -14,11 +14,8 @@
       <change beforePath="$PROJECT_DIR$/.idea/.idea.FlappyBeard/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FlappyBeard/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/GameLifetimeScope.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/GameLifetimeScope.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Services/UIManager/Components/UIManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Services/UIManager/Components/UIManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/View/Common/QuestionSrean.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/View/Common/QuestionSrean.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/View/GameSession/GameOverScrean.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/View/GameSession/GameOverScrean.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/View/GameSession/PauseMenu.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/View/GameSession/PauseMenu.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/View/GameSession/Score.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/View/GameSession/Score.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/View/MainMenu/MainMenu.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/View/MainMenu/MainMenu.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Services/UIManager/Prefabs/UIConfig.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Services/UIManager/Prefabs/UIConfig.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Electronic Highway Sign SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Electronic Highway Sign SDF.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -40,13 +37,15 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/dc764b59c049482b93bebc78a7e33a04212600/81/b4c794ef/Component.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Difficulty/Data/DifficultyState.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Difficulty/Systems/DifficultySystem.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/GlobalGameplayConfig.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/EntryPoints/GameSessionEntryPoint.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Location/Infrastructure/ActiveBlocksRegistry.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Location/Strategies/LinearMoveStrategy.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Location/Strategies/MoveStrategyBase.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Location/Strategies/SineMoveStrategy.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Location/Systems/LocationMovementSystem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Movement/Interfaces/IMoveable.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Services/UIManager/Components/SceneUiInitializer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Services/UIManager/Components/UiRoot.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.inputsystem@57d0e36f6123/InputSystem/Plugins/PlayerInput/PlayerInput.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/jp.hadashikick.vcontainer@c1460d42dff7/Runtime/Internal/ReflectionInjector.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/jp.hadashikick.vcontainer@c1460d42dff7/Runtime/Unity/ComponentRegistrationBuilder.cs" root0="SKIP_HIGHLIGHTING" />
@@ -58,61 +57,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.58963149836411E-46" />
-      <entry key="MS500" value="6.922441462199276E-10" />
-      <entry key="S2" value="0.00512940757734673" />
-      <entry key="S5" value="0.12233341505984588" />
-      <entry key="S10" value="0.38494175291277294" />
-      <entry key="S30" value="1.1976082132799135" />
-      <entry key="S60" value="1.8786015199222874" />
-      <entry key="M2" value="2.652134441127151" />
-      <entry key="M5" value="3.7329979340441937" />
-      <entry key="M10" value="5.118448078449845" />
-      <entry key="M15" value="7.000150453663029" />
-      <entry key="M30" value="13.535116243641305" />
-      <entry key="H1" value="28.64199936837254" />
-      <entry key="H2" value="77.14884849019876" />
-      <entry key="H4" value="186.8617528130588" />
-      <entry key="D1" value="489.67668274458805" />
-      <entry key="W1" value="588.4152069699107" />
+      <entry key="MS100" value="2.215671903210891E-87" />
+      <entry key="MS500" value="4.847316959362375E-18" />
+      <entry key="S2" value="8.110248716245752E-5" />
+      <entry key="S5" value="0.04339782263688359" />
+      <entry key="S10" value="0.359445651092795" />
+      <entry key="S30" value="1.5420536274822243" />
+      <entry key="S60" value="2.3765056967019214" />
+      <entry key="M2" value="3.902073981784266" />
+      <entry key="M5" value="19.427895088364103" />
+      <entry key="M10" value="54.51969999751451" />
+      <entry key="M15" value="82.39293522566983" />
+      <entry key="M30" value="131.0214834227145" />
+      <entry key="H1" value="174.71873056498882" />
+      <entry key="H2" value="230.8942833817038" />
+      <entry key="H4" value="339.2925175936677" />
+      <entry key="D1" value="679.8252101003703" />
+      <entry key="W1" value="801.6048991878806" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="1.0000008714975837" />
-      <entry key="MS500" value="1.0613837247300288" />
-      <entry key="S2" value="1.5009473365218295" />
-      <entry key="S5" value="1.9614282404120216" />
-      <entry key="S10" value="2.8393590786699043" />
-      <entry key="S30" value="5.186608410726233" />
-      <entry key="S60" value="6.684661274859745" />
-      <entry key="M2" value="8.008067404125796" />
-      <entry key="M5" value="9.729874150610407" />
-      <entry key="M10" value="12.09163822959084" />
-      <entry key="M15" value="14.291350325702197" />
-      <entry key="M30" value="19.3703178377737" />
-      <entry key="H1" value="28.140003581137222" />
-      <entry key="H2" value="53.43335869296329" />
-      <entry key="H4" value="107.54045767872101" />
-      <entry key="D1" value="252.42078825901652" />
-      <entry key="W1" value="299.2065601155477" />
+      <entry key="MS100" value="1.0000000000000018" />
+      <entry key="MS500" value="1.0011132347115457" />
+      <entry key="S2" value="1.2229154640899895" />
+      <entry key="S5" value="1.9694910881873686" />
+      <entry key="S10" value="2.943326729160902" />
+      <entry key="S30" value="4.683783001040608" />
+      <entry key="S60" value="5.901677039153358" />
+      <entry key="M2" value="7.6476027712687955" />
+      <entry key="M5" value="13.48429858621592" />
+      <entry key="M10" value="22.791269597287567" />
+      <entry key="M15" value="30.370727772929786" />
+      <entry key="M30" value="46.662554345270884" />
+      <entry key="H1" value="67.56932800752543" />
+      <entry key="H2" value="99.23959156747051" />
+      <entry key="H4" value="156.45440933766312" />
+      <entry key="D1" value="324.79044431212526" />
+      <entry key="W1" value="383.7170790057369" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="6.496418561915341E-5" />
-      <entry key="MS500" value="0.15670202231383898" />
-      <entry key="S2" value="0.9489803282745386" />
-      <entry key="S5" value="1.7377616948870385" />
-      <entry key="S10" value="2.94962501632901" />
-      <entry key="S30" value="6.20645552015983" />
-      <entry key="S60" value="8.446278606476962" />
-      <entry key="M2" value="10.58747800509057" />
-      <entry key="M5" value="13.425669221061215" />
-      <entry key="M10" value="17.185524123483567" />
-      <entry key="M15" value="21.270368315943884" />
-      <entry key="M30" value="32.88802519606106" />
-      <entry key="H1" value="56.76700080450223" />
-      <entry key="H2" value="130.5657811748412" />
-      <entry key="H4" value="294.38353039891604" />
-      <entry key="D1" value="742.0890507606155" />
-      <entry key="W1" value="887.6203020817534" />
+      <entry key="MS100" value="2.964342979480101E-4" />
+      <entry key="MS500" value="0.1972032707932693" />
+      <entry key="S2" value="0.8096934687618045" />
+      <entry key="S5" value="1.674506792917358" />
+      <entry key="S10" value="3.0005131184708858" />
+      <entry key="S30" value="6.03438610423286" />
+      <entry key="S60" value="8.151299719682129" />
+      <entry key="M2" value="11.464027980754537" />
+      <entry key="M5" value="32.8409066369532" />
+      <entry key="M10" value="77.2414354734155" />
+      <entry key="M15" value="112.69873030422993" />
+      <entry key="M30" value="177.63270140759525" />
+      <entry key="H1" value="242.2508511876468" />
+      <entry key="H2" value="330.10573401917287" />
+      <entry key="H4" value="495.72269489272685" />
+      <entry key="D1" value="1004.6057465023342" />
+      <entry key="W1" value="1185.3202455845915" />
     </decayedShown>
   </component>
   <component name="ProblemsViewState">
@@ -127,30 +126,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Attach to Unity Editor.Attach to Unity Editor.executor": "Debug",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.MCP Project settings loaded": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.cidr.known.project.marker": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.readMode.enableVisualFormatting": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "cidr.known.project.marker": "true",
-    "codeWithMe.voiceChat.enabledByDefault": "false",
-    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
-    "git-widget-placeholder": "FB-17-UI",
-    "junie.onboarding.icon.badge.shown": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "to.speed.mode.migration.done": "true",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Attach to Unity Editor.Attach to Unity Editor.executor&quot;: &quot;Debug&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.readMode.enableVisualFormatting&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;FB-17-UI&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="E:\GameEngines\Unity\Unity\6000.3.10f1\Editor\Unity.exe" />
@@ -172,13 +171,15 @@
       <option name="MIXED_MODE_DEBUG" value="0" />
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" useMixedMode="false">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" useMixedMode="false" ignored-value-for-modified-check="33708">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" />
+      <option name="pid" value="33708" />
       <option name="projectPathOnTarget" />
       <option name="runtimes">
-        <list />
+        <list>
+          <MonoRuntime />
+        </list>
       </option>
       <option name="selectedOptions">
         <list />
@@ -199,6 +200,7 @@
       <workItem from="1782213908472" duration="16038000" />
       <workItem from="1782414926604" duration="6869000" />
       <workItem from="1782724507941" duration="1660000" />
+      <workItem from="1782808428387" duration="4611000" />
     </task>
     <servers />
   </component>
@@ -248,17 +250,30 @@
           <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Location/Infrastructure/DeadZone.cs</url>
-          <line>6</line>
-          <properties documentPath="E:\Projects\Games\flappyBeard\FlappyBeard\Assets\FlappyBird\RunTime\Core\Location\Infrastructure\DeadZone.cs" containingFunctionPresentation="Method 'OnTriggerEnter2D'">
+          <url>file://$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Services/UIManager/Components/SceneUiInitializer.cs</url>
+          <line>17</line>
+          <properties documentPath="E:\Projects\Games\flappyBeard\FlappyBeard\Assets\FlappyBird\RunTime\Core\Services\UIManager\Components\SceneUiInitializer.cs" containingFunctionPresentation="Method 'Initialize'">
             <startOffsets>
-              <option value="126" />
+              <option value="370" />
             </startOffsets>
             <endOffsets>
-              <option value="182" />
+              <option value="400" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="5" />
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/EntryPoints/GameSessionEntryPoint.cs</url>
+          <line>13</line>
+          <properties documentPath="E:\Projects\Games\flappyBeard\FlappyBeard\Assets\FlappyBird\RunTime\Core\EntryPoints\GameSessionEntryPoint.cs" containingFunctionPresentation="Method 'Start'">
+            <startOffsets>
+              <option value="270" />
+            </startOffsets>
+            <endOffsets>
+              <option value="297" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="8" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
