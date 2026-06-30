@@ -831,7 +831,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1171021453388162054}
-  - component: {fileID: 1880466130768905963}
+  - component: {fileID: 4015258510364615386}
   m_Layer: 5
   m_Name: PauseMenu
   m_TagString: Untagged
@@ -860,7 +860,7 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1880466130768905963
+--- !u!114 &4015258510364615386
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -869,9 +869,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 4542701871959632109}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0e16d0389b7792e4eaa513a24e580dd2, type: 3}
+  m_Script: {fileID: 11500000, guid: 418a3d7e8a5e43359b81fa9a690d6b48, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::UIElement
+  m_EditorClassIdentifier: Assembly-CSharp::FlappyBird.RunTime.Core.Services.UI.View.PauseMenuView
+  _resumeButton: {fileID: 4561835201299253265}
+  _menuButton: {fileID: 5509362973372386107}
+  _exitButton: {fileID: 7166744758397951842}
 --- !u!1 &4620259592948612051
 GameObject:
   m_ObjectHideFlags: 0

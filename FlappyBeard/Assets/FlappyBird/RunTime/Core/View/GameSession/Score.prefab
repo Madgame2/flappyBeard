@@ -153,7 +153,7 @@ GameObject:
   - component: {fileID: 4649235370533655650}
   - component: {fileID: 3302570054104988219}
   - component: {fileID: 224225409485630423}
-  - component: {fileID: 6404916503118287393}
+  - component: {fileID: 7142164576456493033}
   m_Layer: 5
   m_Name: Score
   m_TagString: Untagged
@@ -260,7 +260,7 @@ MonoBehaviour:
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
---- !u!114 &6404916503118287393
+--- !u!114 &7142164576456493033
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -269,9 +269,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 3175774518944015788}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0e16d0389b7792e4eaa513a24e580dd2, type: 3}
+  m_Script: {fileID: 11500000, guid: d41eea96a5964b26a6a2b1610170c155, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::UIElement
+  m_EditorClassIdentifier: Assembly-CSharp::FlappyBird.RunTime.Core.Services.UI.View.ScoreView
+  _scoreText: {fileID: 8753920459769748589}
 --- !u!1 &8033913542588222203
 GameObject:
   m_ObjectHideFlags: 0
