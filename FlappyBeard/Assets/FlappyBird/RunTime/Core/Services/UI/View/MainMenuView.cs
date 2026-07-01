@@ -15,22 +15,22 @@ namespace FlappyBird.RunTime.Core.Services.UI.View
 
         private void OnEnable()
         {
-            _playButton.onClick.AddListener(HandlePlayPressed);
-            _exitButton.onClick.AddListener(HandleExitPressed);
+            _playButton.onClick.AddListener(OnPlayPressedHandler);
+            _exitButton.onClick.AddListener(OnExitHandler);
         }
 
         private void OnDisable()
         {
-            _playButton.onClick.RemoveListener(HandlePlayPressed);
-            _exitButton.onClick.RemoveListener(HandleExitPressed);
+            _playButton.onClick.RemoveListener(OnPlayPressedHandler);
+            _exitButton.onClick.RemoveListener(OnExitHandler);
         }
 
-        private void HandlePlayPressed()
+        private void OnPlayPressedHandler()
         {
             OnPlayClicked?.Invoke();
         }
 
-        private void HandleExitPressed()
+        private void OnExitHandler()
         {
             OnExitClicked?.Invoke();
         }

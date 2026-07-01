@@ -11,52 +11,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bf97469d-037c-46aa-87c6-5d004338480f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Services/Score/ScoreSystem.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Services/Score/ScoreSystem.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Services/Score/ScoreZoneView.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Services/Score/ScoreZoneView.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Services/UI/DialogService.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Services/UI/Factory.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Services/UI/Factory/UIWindowFactory.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Services/UI/Factory/UIWindowFactory.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Services/UI/Presenters/UIWindowPresenter.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Services/UI/Presenters/UIWindowPresenter.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Services/UI/Provider.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Services/UI/Provider/UIRootProvider.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Services/UI/Provider/UIRootProvider.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Services/UI/Repository.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Services/UI/Repository/UIWindowRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Services/UI/Repository/UIWindowRepository.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Services/UI/Routers.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Services/UI/Routers/UIPopupRouter.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Services/UI/Routers/UIPopupRouter.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.FlappyBeard/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FlappyBeard/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Location/Prefabs/LocationBlock_1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Location/Prefabs/LocationBlock_1.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Location/Prefabs/LocationBlock_2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Location/Prefabs/LocationBlock_2.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Scopes/AppRootScope.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Scopes/AppRootScope.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Scopes/GameLifetimeScope.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Scopes/GameLifetimeScope.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Services/ScenesService/Infrastructure/SceneService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Services/ScenesService/Infrastructure/SceneService.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Services/ScenesService/Interfaces/ISceneService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Services/ScenesService/Interfaces/ISceneService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Services/Score/ScoreTrigger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Services/Score/ScoreTriggerView.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Services/Score/ScoreTrigger.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Services/Score/ScoreTriggerView.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Services/UI/Components/DialogService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Services/UI/DialogService/DialogService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Services/UI/Components/DialogService.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Services/UI/DialogService/DialogService.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Services/UI/Components/SceneUiInitializer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Services/UI/Components/SceneUiInitializer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Services/UI/Components/UIManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Services/UI/Components/UIService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Services/UI/Components/UIManager.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Services/UI/Components/UIService.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Services/UI/Interfaces/IDialogService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Services/UI/Interfaces/IDialogService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Services/UI/Interfaces/IUIManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Services/UI/Interfaces/UIService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Services/UI/Interfaces/IUIManager.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Services/UI/Interfaces/UIService.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Services/UI/Meta/UIConfig.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Services/UI/Meta/UIConfig.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Services/UI/Prefabs/UIConfig.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Services/UI/Prefabs/UIConfig.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Services/UI/Presenters/MainMenuPresenter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Services/UI/Presenters/MainMenuPresenter.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Services/UI/Presenters/PausePresenter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Services/UI/Presenters/PausePresenter.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Services/UI/Presenters/ScorePresenter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Services/UI/Presenters/ScorePresenter.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Services/UI/View/MainMenuView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Services/UI/View/MainMenuView.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Services/UI/View/PauseMenuView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Services/UI/View/PauseMenuView.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Services/UI/View/WarningQuestionView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/Services/UI/View/WarningQuestionView.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/View/BirdView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FlappyBird/RunTime/Core/View/BirdView.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Electronic Highway Sign SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Electronic Highway Sign SDF.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -259,7 +216,7 @@
       <workItem from="1782724507941" duration="1660000" />
       <workItem from="1782808428387" duration="14145000" />
       <workItem from="1782830205961" duration="4034000" />
-      <workItem from="1782897216800" duration="7797000" />
+      <workItem from="1782897216800" duration="9144000" />
     </task>
     <servers />
   </component>

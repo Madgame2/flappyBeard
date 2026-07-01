@@ -15,37 +15,37 @@ namespace FlappyBird.RunTime.Core.Services.UI.View
         [SerializeField] private Button _menuButton;
         [SerializeField] private Button _exitButton;
 
-        public event Action ResumeClicked;
-        public event Action MenuClicked;
-        public event Action ExitClicked;
+        public event Action OnResumeClicked;
+        public event Action OnMenuClicked;
+        public event Action OnExitClicked;
 
         private void OnEnable()
         {
-            _resumeButton.onClick.AddListener(HandleResumePressed);
-            _menuButton.onClick.AddListener(HandleMenuPressed);
-            _exitButton.onClick.AddListener(HandleExitPressed);
+            _resumeButton.onClick.AddListener(OnResumeHandle);
+            _menuButton.onClick.AddListener(OnMenuHandle);
+            _exitButton.onClick.AddListener(OnExitHandle);
         }
 
         private void OnDisable()
         {
-            _resumeButton.onClick.RemoveListener(HandleResumePressed);
-            _menuButton.onClick.RemoveListener(HandleMenuPressed);
-            _exitButton.onClick.RemoveListener(HandleExitPressed);
+            _resumeButton.onClick.RemoveListener(OnResumeHandle);
+            _menuButton.onClick.RemoveListener(OnMenuHandle);
+            _exitButton.onClick.RemoveListener(OnExitHandle);
         }
 
-        private void HandleResumePressed()
+        private void OnResumeHandle()
         {
-            ResumeClicked?.Invoke();
+            OnResumeClicked?.Invoke();
         }
 
-        private void HandleMenuPressed()
+        private void OnMenuHandle()
         {
-            MenuClicked?.Invoke();
+            OnMenuClicked?.Invoke();
         }
 
-        private void HandleExitPressed()
+        private void OnExitHandle()
         {
-            ExitClicked?.Invoke();
+            OnExitClicked?.Invoke();
         }
     }
 }

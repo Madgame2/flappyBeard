@@ -33,12 +33,12 @@ namespace FlappyBird.RunTime.Core.Services.UI.Presenters
 
         public void Initialize()
         {
-            _inputService.OnCancelRequested += TogglePause;
+            _inputService.OnCancelRequested += OnTogglePause;
         }
 
         public void Dispose()
         {
-            _inputService.OnCancelRequested -= TogglePause;
+            _inputService.OnCancelRequested -= OnTogglePause;
 
             if (_view != null)
             {
@@ -46,7 +46,7 @@ namespace FlappyBird.RunTime.Core.Services.UI.Presenters
             }
         }
 
-        private void TogglePause()
+        private void OnTogglePause()
         {
             if (_isOpen)
             {
@@ -62,9 +62,9 @@ namespace FlappyBird.RunTime.Core.Services.UI.Presenters
         {
             _view = _uiService.Open<PauseMenuView>("PauseMenu");
 
-            _view.ResumeClicked += OnResume;
-            _view.MenuClicked += OnMenu;
-            _view.ExitClicked += OnExit;
+            _view.OnResumeClicked += OnOnResume;
+            _view.OnMenuClicked += OnOnMenu;
+            _view.OnExitClicked += OnOnExit;
 
             Time.timeScale = 0f;
             _isOpen = true;
@@ -83,17 +83,17 @@ namespace FlappyBird.RunTime.Core.Services.UI.Presenters
 
         private void Unsubscribe()
         {
-            _view.ResumeClicked -= OnResume;
-            _view.MenuClicked -= OnMenu;
-            _view.ExitClicked -= OnExit;
+            _view.OnResumeClicked -= OnOnResume;
+            _view.OnMenuClicked -= OnOnMenu;
+            _view.OnExitClicked -= OnOnExit;
         }
 
-        private void OnResume()
+        private void OnOnResume()
         {
             ClosePause();
         }
 
-        private async void OnMenu()
+        private async void OnOnMenu()
         {
             bool result = await _dialogService.ShowWarning("Return to main menu?");
 
@@ -119,7 +119,7 @@ namespace FlappyBird.RunTime.Core.Services.UI.Presenters
             }
         }
 
-        private async void OnExit()
+        private async void OnOnExit()
         {
             bool result = await _dialogService.ShowWarning("Exit game?");
 

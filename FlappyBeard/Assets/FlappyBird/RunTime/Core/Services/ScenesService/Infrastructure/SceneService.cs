@@ -9,13 +9,13 @@ namespace FlappyBird.RunTime.Core.Services.ScenesService.Infrastructure
 {
     public class SceneService : ISceneService
     {
-        public async UniTask LoadScene(string sceneName, CancellationToken ct = default)
+        public async UniTask LoadScene(string sceneName, CancellationToken token = default)
         {
             try
             {
                 var operation = SceneManager.LoadSceneAsync(sceneName);
                 
-                await operation.ToUniTask(cancellationToken: ct);
+                await operation.ToUniTask(cancellationToken: token);
             }
             catch (OperationCanceledException)
             {

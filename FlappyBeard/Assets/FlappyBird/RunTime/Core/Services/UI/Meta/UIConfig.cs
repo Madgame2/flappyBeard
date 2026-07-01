@@ -10,7 +10,7 @@ namespace FlappyBird.RunTime.Core.Services.UI.Meta
 
         private Dictionary<string, WindowData> _windowsDict;
 
-        public List<WindowData> Windows => _windows;
+        public IReadOnlyList<WindowData> Windows => _windows;
 
         public WindowData GetWindowData(string id)
         {
