@@ -33,12 +33,12 @@ namespace FlappyBird.RunTime.Core.Services.UI.Presenters
 
         public void Initialize()
         {
-            _inputService.OnCancelRequested += OnTogglePause;
+            _inputService.OnCancelRequested += OnPauseHandler;
         }
 
         public void Dispose()
         {
-            _inputService.OnCancelRequested -= OnTogglePause;
+            _inputService.OnCancelRequested -= OnPauseHandler;
 
             if (_view != null)
             {
@@ -46,7 +46,7 @@ namespace FlappyBird.RunTime.Core.Services.UI.Presenters
             }
         }
 
-        private void OnTogglePause()
+        private void OnPauseHandler()
         {
             if (_isOpen)
             {

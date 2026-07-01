@@ -25,3 +25,6 @@ MonoBehaviour:
   - ID: WarningQuestion
     Layer: 1
     Prefab: {fileID: 5404670492194339588, guid: dd11580bac1dadf408e6dcd06df40017, type: 3}
+  - ID: GameOverUI
+    Layer: 1
+    Prefab: {fileID: 7069673461491578918, guid: bac6c9a3b468e6e4186db025ec8cbafe, type: 3}
